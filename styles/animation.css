@@ -1,11 +1,22 @@
+@import url("./globalvars.css");
+
 :root {
 
 }
 
-@keyframes identifier {
+@keyframes button-light-hover {
     
 }
 
-.indexes__item a:hover {
-    
+button.pressable {
+    transition: all 0.5s ease-in;
+}
+
+button.pressable:hover {
+    transition: all 0.2s ease-out;
+}
+
+button.pressable:active {
+    transition: all 0.2s ease-out;
+    transform: scale(0.8, 0.8);
 }
