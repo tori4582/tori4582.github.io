@@ -1,0 +1,49 @@
+
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("../fonts/ubuntu/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("../fonts/ubuntu/Ubuntu-MediumItalic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("../fonts/ubuntu/Ubuntu-Light.ttf");
+    font-weight: light;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("../fonts/ubuntu/Ubuntu-LightItalic.ttf");
+    font-weight: light;
+    font-style: italic;
+}
+
+.header {
+    font-family: Garamond;
+}
+
+.light {
+    font-weight: 100;
+}
+
+.title {
+    font-size: 10rem;
+}
+
+.semititle {
+    font-size: 3em;
+}
+
+.spaced {
+    letter-spacing: 0.5px;
+}
+
+.double-spaced {
+    letter-spacing: 1px;
+}

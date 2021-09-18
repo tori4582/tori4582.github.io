@@ -1,0 +1,141 @@
+@import url("./globalvars.css");
+@import url("./fonts.css");
+@import url("./animation.css");
+
+/* Common elements */
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--background-dark);
+
+    font-family: Ubuntu;
+    font-size: 16;
+    color: var(--foreground-content);
+}
+
+
+button {
+    background-color: transparent;
+    border: var(--border-thickness);
+}
+
+/* The Hero Section */
+
+.hero-area {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    
+    background-image: url("../images/porfolio-cover.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero-area__menubar {
+    margin: 0;
+    width: 100%;
+    height: 8vh;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+
+    background-color: transparent;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.menubar__logo {
+    float: left;
+    display: block;
+}
+
+.menubar__indexes {
+    float: right;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.indexes--items {
+    height: 100%;    
+}
+
+.indexes__item {
+    height: 100%;
+    display: inline-flex;
+}
+
+.indexes__item:hover {
+    border-bottom: var(--border-thickness);
+    border-bottom-color: white;
+}
+
+.indexes__item a {
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.menubar__logo {
+    padding-left: 30px;
+}
+
+.hero-area__content {
+    padding-left: 10vw;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.content__titlebox {
+    margin-bottom: 5em;
+    padding: 0;
+    display: flex;
+    align-content: flex-end;
+}
+
+.content__titlebox h1 {
+    margin: 0;
+}
+
+.content__traversal {
+    display: flex;
+    align-content: flex-start;
+}
+
+.travesal__container {
+    margin-top: 3em;
+}
+
+.button-wrapper {
+    display: inline-block;
+}
+
+
