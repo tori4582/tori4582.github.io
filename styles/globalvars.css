@@ -25,6 +25,7 @@ html {
     height: 100%;
     font-family: Ubuntu;
     font-size: var(--size-text-regular);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -93,6 +94,18 @@ section {
     padding: 0;
 }
 
+footer {
+    background-color: var(--background-dimmed);
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
 
 /* Scrollbar customizations */
 
@@ -131,4 +144,8 @@ section {
 
 .alter {
     color: var(--color-alternative);
+}
+
+.dimmed {
+    background-color: var(--background-dimmed);
 }
