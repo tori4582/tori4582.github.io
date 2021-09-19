@@ -2,42 +2,6 @@
 @import url("./fonts.css");
 @import url("./animation.css");
 
-/* Common elements */
-
-html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: Ubuntu;
-    font-size: 20;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-dark);
-    color: var(--foreground-content);
-}
-
-button {
-    padding: 1em;
-    height: 4em;
-    background-color: transparent;
-    cursor: pointer
-}
-
-button.light {
-    border: var(--border-thickness);
-    color: var(--foreground-content);
-}
-
-button.light:hover {
-    background-color: var(--background-light);
-    color: var(--foreground-content-light);
-}
-
-
 /* The Hero Section */
 
 .hero-area {
@@ -55,17 +19,18 @@ button.light:hover {
     margin: 0;
     width: 100%;
     height: 8vh;
-    position: sticky;
+    position: fixed;
     z-index: 1;
     top: 0;
-    background-color: transparent;
-    justify-content: center;
-    align-items: center;
 }
 
 .menubar__logo {
     float: left;
-    display: block;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menubar__indexes {
@@ -82,11 +47,14 @@ button.light:hover {
 .indexes__item {
     height: 100%;
     display: inline-flex;
+    transition: var(--element-regular);
 }
 
 .indexes__item:hover {
     border-bottom: var(--border-thickness);
-    border-bottom-color: white;
+    border-bottom-color: var(--color-alternative);
+    color: var(--color-alternative);
+    transition: var(--element-hover);
 }
 
 .indexes__item a {
@@ -97,7 +65,7 @@ button.light:hover {
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--foreground-light);
 }
 
 .menubar__logo {
@@ -149,4 +117,40 @@ button.light:hover {
 
 .travesal__container span {
     margin: 1em;
+}
+
+
+/* Sections definitions */
+
+.section__container {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.content__northside {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.content__title {
+    width: fit-content;
+    padding-bottom: 2em;
+    border-bottom: var(--border-thickness);
+    display: flex;
+}
+
+.content__title h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.image-avatar {
+    margin: 3rem;
+    margin-left: 0;
+    display: inline-block;
+    border-radius: 100%;
 }

@@ -11,6 +11,12 @@
 
 @font-face {
     font-family: Ubuntu;
+    src: url("../fonts/ubuntu/Ubuntu-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Ubuntu;
     src: url("../fonts/ubuntu/Ubuntu-Light.ttf");
     font-weight: light;
 }
@@ -22,26 +28,77 @@
     font-style: italic;
 }
 
-.header {
-    font-family: Garamond;
+:root {
+    --size-title: 10rem;
+    --size-semi-title: 3rem;
+    --size-header: 6rem;
+    --size-semi-header: 3rem;
+    --size-text-content: 22px;
+    --size-text-regular: 18px;
+    --text-space-regular: 0.5px;
+    --text-space-doubled: 1px;
+    --text-space-wide: 5px;
 }
+
+
+/* Common text elements */
+
+h1 {
+    font-family: Garamond;
+    font-weight: 300;
+}
+
+em {
+    font-style: italic;
+}
+
+
+/* Functional text sizes */
+
+.header {
+    font-size: var(--size-header);
+}
+
+.title {
+    font-size: var(--size-title);
+}
+
+.semi-title {
+    font-size: var(--size-semi-title);
+}
+
+.content__text p {
+    font-size: var(--size-text-content);
+}
+
+
+/* Text weights  */
 
 .light {
     font-weight: 100;
 }
 
-.title {
-    font-size: 10rem;
-}
 
-.semi-title {
-    font-size: 3em;
-}
+/* Text spacing for decoration  */
 
 .spaced {
-    letter-spacing: 0.5px;
+    letter-spacing: var(--text-space-regular);
 }
 
 .double-spaced {
-    letter-spacing: 1px;
+    letter-spacing: var(--text-space-doubled);
+}
+
+.header-spaced {
+    letter-spacing: var(--text-space-wide);
+}
+
+.content__text p {
+    line-height: 1.5em;
+    letter-spacing: var(--text-space-regular);
+    text-align: justify;
+}
+
+.content__text p:not(:last-child) {
+    padding-bottom: 1em;
 }
