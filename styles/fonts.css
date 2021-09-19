@@ -29,9 +29,9 @@
 }
 
 :root {
-    --size-title: 10rem;
-    --size-semi-title: 3rem;
-    --size-header: 6rem;
+    --size-title: 8.5rem;
+    --size-semi-title: 2.5rem;
+    --size-header: 4.5rem;
     --size-semi-header: 3rem;
     --size-text-content: 22px;
     --size-text-regular: 18px;
