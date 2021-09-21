@@ -30,7 +30,7 @@
 
 :root {
     --size-title: 8.5rem;
-    --size-semi-title: 2.5rem;
+    --size-semi-title: 1.5rem;
     --size-header: 4.5rem;
     --size-semi-header: 3rem;
     --size-text-content: 18px;
@@ -43,7 +43,9 @@
 
 /* Common text elements */
 
-h1 {
+h1,
+h2,
+h3 {
     font-family: Garamond;
     font-weight: 300;
 }
@@ -69,6 +71,14 @@ em {
 
 .content__text p {
     font-size: var(--size-text-content);
+}
+
+.content__title h2.semi-title {
+    padding-left: 2vw;
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: light;
+    color: grey;
 }
 
 

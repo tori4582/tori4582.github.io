@@ -8,7 +8,7 @@
     margin: 0;
     width: 100%;
     height: 100vh;
-    background-image: url("../images/porfolio-cover.png");
+    background-image: linear-gradient(to right, rgba(21, 21, 21, 1) 0%, rgba(21, 21, 21, 1) 35%, rgba(21, 21, 21, 0.9) 60%, rgba(21, 21, 21, 0.75) 70%, rgba(21, 21, 21, 0.5) 80%, rgba(21, 21, 21, 0.25) 90%, rgba(21, 21, 21, 0) 100%), url("../images/porfolio-cover.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,7 +51,7 @@
     border-bottom: var(--border-thickness);
     border-bottom-color: var(--color-alternative);
     color: var(--color-alternative);
-    transition: var(--element-hover);
+    transition: var(--element-none);
 }
 
 .indexes__item a {
@@ -119,11 +119,44 @@
 
 /* Sections definitions */
 
+#introduction {
+    background-color: var(--background-dark);
+}
+
+#expertise {
+    background-color: var(--background-dark);
+}
+
 .section__container {
     padding-left: 10vw;
     padding-right: 10vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
+}
+
+.content__westside {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    align-items: flex-start;
+    box-sizing: content-box;
+    object-fit: cover;
+    height: 100%;
+}
+
+#keyboard {
+    width: 30vw;
+}
+
+.content__eastside {
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    justify-self: center;
 }
 
 .content__northside {
@@ -134,10 +167,15 @@
 }
 
 .content__title {
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 3em;
+}
+
+.underlined {
     width: fit-content;
     padding-bottom: 2em;
     border-bottom: var(--border-thickness);
-    display: flex;
 }
 
 .content__title h1 {
@@ -150,4 +188,85 @@
     margin-left: 0;
     display: inline-block;
     border-radius: 100%;
+}
+
+.content__text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Skill Card properties */
+
+div.card-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    margin-left: -2em;
+    margin-right: -2em;
+}
+
+div.card {
+    margin: 1em;
+    border: 2px solid var(--background-dimmed);
+    border-width: var(--border-thickness);
+    width: fit-content;
+    min-width: 20vw;
+    max-width: 50vw;
+    transition: var(--element-regular);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+div.card:hover {
+    border-color: var(--color-alternative);
+    transition: var(--element-none);
+}
+
+div.card div.card__image {
+    margin: 0;
+    min-width: 35%;
+    max-width: 35%;
+    height: 100%;
+    padding: 1.5em;
+}
+
+#firefox {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1200px-Firefox_logo%2C_2019.svg.png");
+    background-size: cover;
+}
+
+div.card div.card__content {
+    margin: 1.5em;
+    padding: 0;
+    width: 100%;
+    text-align: justify;
+}
+
+div.card__content h1 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    padding-bottom: 0.5em;
+    transition: var(--element-regular);
+}
+
+div.card__content h1:hover {
+    color: var(--color-alternative);
+    transition: var(--element-none);
+}
+
+.hovered {
+    color: var(--color-alternative);
+    transition: var(--element-none);
+}
+
+div.card__content p {
+    text-align: justify;
 }

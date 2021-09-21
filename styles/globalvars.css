@@ -2,7 +2,7 @@
 @import url("./animation.css");
 :root {
     --background-light: rgb(250, 250, 250);
-    --background-dark: rgb(14, 14, 14);
+    --background-dark: rgb(21, 21, 21);
     --background-dimmed: rgb(38, 38, 38);
     --foreground-title: rgb(250, 250, 250);
     --foreground-content: rgb(250, 250, 250);
@@ -148,4 +148,14 @@ footer {
 
 .dimmed {
     background-color: var(--background-dimmed);
+}
+
+.flex-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
 }
