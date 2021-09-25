@@ -56,6 +56,13 @@ em {
     font-style: italic;
 }
 
+p {
+    display: block;
+}
+
+span {
+    display: inline-block;
+}
 
 /* Functional text sizes */
 
@@ -95,13 +102,16 @@ h2.centered {
     text-align: center;
 }
 
+p.scripted {
+    font-size: var(--size-text-script);
+}
+
 
 /* Text weights  */
 
 .light {
     font-weight: 100;
 }
-
 
 /* Text spacing for decoration  */
 
