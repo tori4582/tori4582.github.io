@@ -32,9 +32,10 @@
     --size-title: 8.5rem;
     --size-semi-title: 1.5rem;
     --size-header: 4.5rem;
-    --size-semi-header: 3rem;
+    --size-semi-header: 2.5rem;
     --size-text-content: 18px;
     --size-text-regular: 18px;
+
     --text-space-regular: 0.5px;
     --text-space-doubled: 1px;
     --text-space-wide: 5px;
@@ -61,6 +62,10 @@ em {
     font-size: var(--size-header);
 }
 
+.sub-header {
+    font-size: var(--size-semi-header);
+}
+
 .title {
     font-size: var(--size-title);
 }
@@ -79,6 +84,14 @@ em {
     font-style: italic;
     font-weight: light;
     color: grey;
+}
+
+h2.centered {
+    font-weight: normal;
+    padding: 0;
+    padding-bottom: 2rem;
+    width: auto;
+    text-align: center;
 }
 
 

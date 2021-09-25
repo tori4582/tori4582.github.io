@@ -5,8 +5,7 @@ let extractCardHeader = function(element) {
 
 let cardEvents = {
     hover: function(event) {
-        let header = extractCardHeader(event.target);
-        header.classList.add("hovered");
+        extractCardHeader(event.target).classList.add("hovered");
 
     },
     exit: function(event) {
@@ -18,9 +17,8 @@ let addHoverEventforCardHeaders = function() {
     let cards = document.getElementsByClassName("card");
 
     for (let card of cards) {
-        card.addEventListener("mouseover", cardEvents.hover, false);
-        card.addEventListener("mouseout", cardEvents.exit, false);
-        console.log("applied");
+        card.addEventListener("mouseover", cardEvents.hover, true);
+        card.addEventListener("mouseout", cardEvents.exit, true);
     }
 }
 
