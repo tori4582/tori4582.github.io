@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Document</title>
     <script type="text/javascript" src="./scripts/event-handlers.js"></script>
+    <script type="text/javascript" src="./scripts/script.js"></script>
 </head>
 
 <body>
@@ -51,7 +52,10 @@
                     <p class="semi-title light double-spaced">Back-end Developer</p>
                     <div class="travesal__container">
                         <div class="button-wrapper">
-                            <button class="light pressable">Get my CV</button>
+                            <button class="light pressable" onclick="getCV()">
+                                <i class="bi bi-cloud-download"></i>
+                                <span>Get my CV</span>
+                            </button>
                         </div>
                         <span> or scroll down for more</span>
                     </div>
@@ -193,8 +197,60 @@
 
     <section id="contact" class="contact">
         <div class="section__container">
-            <div class="content__title">
-                <h1 class="header header-spaced">Contact</h1>
+            <div id="contact-container" class="section__container flex-horizontal" style="padding-left: 0px;">
+                <div class="content__westside flex-vertical" style="margin-left: 0px; height: fit-content;">
+                    <div class="content__title">
+                        <h1 class="header header-spaced">Contact</h1>
+                    </div>
+                    <div class="content__text">
+                        <p>Thanks for taking the time to take a look at my portfolio. I hope you are satisfied with my performance and you perhaps give me a job opportunity and be a part of the development of your enterprise.
+                        </p>
+                        <div>
+                            <ul id="contact-list">
+                                <li>
+                                    <a href="mailto:hungtran6360@gmail.com" target="_blank">
+                                        <i class="bi bi-envelope-fill"></i>
+                                        <span>hungtran6360@gmail.com</span></a>
+                                </li>
+                                <li>
+                                    <a href="tel:0862126360">
+                                        <i class="bi bi-telephone-outbound-fill" target="_blank"></i>
+                                        <span>(+84) 86 212 6360</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/tori4582/" target="_blank">
+                                        <i class="bi bi-linkedin"></i>
+                                        <span>Quốc Hùng (tori4582)</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/tori4582" target="_blank">
+                                        <i class="bi bi-github"></i>
+                                        <span>tori4582</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://fb.com/tori4582" target="_blank">
+                                        <i class="bi bi-facebook"></i>
+                                        <span>Quốc Hùng</span></a>
+                                </li>
+                                <div class="button-wrapper" style="margin: 1rem;margin-top: 2rem;">
+                                    <button class="light pressable border-light" onclick="getCV()">
+                                        <i class="bi bi-cloud-download"></i>
+                                        <span>Get my CV</span>
+                                    </button>
+                                </div>
+                                <span>
+                                    Or download my Résume instead
+                                </span>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="content__eastside">
+
+                </div>
             </div>
         </div>
     </section>
