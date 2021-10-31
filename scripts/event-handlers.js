@@ -1,4 +1,3 @@
-
 let extractCardHeader = function(element) {
     return element.getElementsByTagName("h1")[0];
 }
@@ -22,8 +21,7 @@ let addHoverEventforCardHeaders = function() {
     }
 }
 
-
 // Main method: fetch HTML Elements only work when the page is fully loaded.
 window.onload = function() {
-   addHoverEventforCardHeaders();
+    addHoverEventforCardHeaders();
 };
