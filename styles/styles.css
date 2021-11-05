@@ -8,15 +8,7 @@
     margin: 0;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to right,
-        rgba(21, 21, 21, 1) 0%,
-        rgba(21, 21, 21, 1) 35%,
-        rgba(21, 21, 21, 0.9) 60%,
-        rgba(21, 21, 21, 0.75) 70%,
-        rgba(21, 21, 21, 0.5) 80%,
-        rgba(21, 21, 21, 0.25) 90%,
-        rgba(21, 21, 21, 0) 100%),
-        url("../images/porfolio-cover.png");
+    background-image: linear-gradient(to right, rgba(21, 21, 21, 1) 0%, rgba(21, 21, 21, 1) 35%, rgba(21, 21, 21, 0.9) 60%, rgba(21, 21, 21, 0.75) 70%, rgba(21, 21, 21, 0.5) 80%, rgba(21, 21, 21, 0.25) 90%, rgba(21, 21, 21, 0) 100%), url("../images/porfolio-cover.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -120,10 +112,10 @@
     width: var(--button-width-regular);
 }
 
-
 .travesal__container span {
     margin: 1em;
 }
+
 
 /* Sections definitions */
 
@@ -226,7 +218,6 @@ a.card {
     width: 27%;
     min-width: 20vw;
     max-width: 100%;
-
     transition: var(--element-regular);
     background-color: transparent;
     position: relative;
@@ -242,7 +233,7 @@ a.card {
 a.card:hover {
     border-color: var(--color-alternative);
     transition: var(--element-none);
-    transform: translate(0,5px);
+    transform: translate(0, 5px);
 }
 
 a.card div.card__image a {
@@ -297,6 +288,8 @@ div.card__content p:not(:last-child) {
     text-align: left;
     padding-bottom: 0.5rem;
 }
+
+
 /*
 div.card__content p:first-child {
     text-align: justify;
@@ -308,6 +301,7 @@ div.card__content p em {
     font-size: var(--size-text-script);
 }
 
+
 /* CONTACT SECTION */
 
 #contact {
@@ -318,9 +312,9 @@ div.card__content p em {
     margin-right: 0;
     padding-right: 0;
     background-image: url(../images/devices.gif);
-    background-position: right;
+    background-position: bottom 50% right -50%;
     background-repeat: no-repeat;
-    background-size: 50vw auto;
+    background-size: 60vw auto;
     background-attachment: local;
     width: 100%;
     display: flex;
@@ -354,7 +348,7 @@ ul#contact-list li {
     align-items: center;
 }
 
-ul#contact-list li a{
+ul#contact-list li a {
     background-color: black;
     width: 100%;
     display: flex;
@@ -372,11 +366,11 @@ ul#contact-list li a i {
     border-right: var(--border-regular);
     transition: var(--element-regular);
 }
-ul#contact-list li a span{
+
+ul#contact-list li a span {
     color: white;
     display: inline-block;
     padding: 20px;
-
 }
 
 ul#contact-list li a:hover {
@@ -390,3 +384,23 @@ ul#contact-list li a:hover i {
     transition: var(--element-hover);
 }
 
+#menubar {
+    background-color: transparent !important;
+    transition: var(--element-regular)
+}
+
+#menubar.scrolled {
+    transition: var(--element-regular);
+    /* background-image: linear-gradient(90deg, rgba(21, 21, 21, 1) 0%, rgba(21, 21, 21, 1) 35%, rgba(21, 21, 21, 0.9) 60%, rgba(21, 21, 21, 0.75) 70%, rgba(21, 21, 21, 0.5) 80%, rgba(21, 21, 21, 0.25) 90%, rgba(21, 21, 21, 0) 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    background-color: rgba(21, 21, 21, 0.66);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 15px 1px black;
+}
+
+#summary__header {
+    padding-bottom: 0px;
+}

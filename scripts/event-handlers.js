@@ -4,15 +4,14 @@ let extractCardHeader = function(element) {
 
 let cardEvents = {
     hover: function(event) {
-        extractCardHeader(event.target).classList.add("hovered");
-
+        extractCardHeader(event.srcElement).classList.add("hovered");
     },
     exit: function(event) {
-        extractCardHeader(event.target).classList.remove("hovered");
+        extractCardHeader(event.srcElement).classList.remove("hovered");
     }
 };
 
-let addHoverEventforCardHeaders = function() {
+let addHoverEventForCardHeaders = function() {
     let cards = document.getElementsByClassName("card");
 
     for (let card of cards) {
@@ -21,7 +20,25 @@ let addHoverEventforCardHeaders = function() {
     }
 }
 
+function changeBackgroundWhenScrolling() {
+    let vh = document.documentElement.clientHeight;
+    let y = window.scrollY;
+    let triggerPoint = vh / 4;
+
+    let menuBar = document.getElementById("menubar");
+
+    if (y > triggerPoint) {
+        menuBar.classList.add("scrolled");
+    } else {
+        menuBar.classList.remove("scrolled");
+    }
+}
+
 // Main method: fetch HTML Elements only work when the page is fully loaded.
 window.onload = function() {
-    addHoverEventforCardHeaders();
+    addHoverEventForCardHeaders();
 };
+
+window.onscroll = function() {
+    changeBackgroundWhenScrolling();
+}

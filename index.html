@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="hero-area">
-            <div class="hero-area__menubar">
+            <div id="menubar" class="hero-area__menubar">
                 <div class="menubar__logo">
                     <h1>Pham Quoc Hung</h1>
                 </div>
@@ -49,7 +49,9 @@
                     <h1 class="title header light alter">Spring</h1>
                 </div>
                 <div class="content__travesal">
-                    <p class="semi-title light double-spaced">Back-end Developer</p>
+                    <p class="semi-title light double-spaced">
+                        <span class="">Back-end Developer</span>
+                    </p>
                     <div class="travesal__container">
                         <div class="button-wrapper">
                             <button class="light pressable" onclick="getCV()">
@@ -72,22 +74,23 @@
             <div class="content__eastside">
                 <div class="content__northside">
                     <img class="image-avatar" src="./images/avt.jpg" alt="Avatar" width="150px" height="150px" />
-                    <div class="content__title underlined">
+                    <div id="summary__header" class="content__title underlined">
                         <h1 class="header header-spaced">Summary</h1>
                     </div>
                 </div>
                 <div class="content__text">
                     <p>
-                        My name is <strong>Pham Quoc Hung</strong>, an aesthetic-oriented programmer who has a passionate about creating software with <strong>Java technologies</strong> as well as UI/UX designing and implementation. So I tried to develop
-                        myself as a Java client-side(<em>back-end</em>) developer firstly before stepping into client-side(<em>front-end</em>).
+                        My name is <strong class="alter">Pham Quoc Hung</strong>, an aesthetic-oriented programmer who has a passionate about creating software with <strong>Java technologies</strong> as well as UI/UX designing and implementation. So I
+                        tried to develop myself as a Java client-side(<em>back-end</em>) developer firstly before stepping into client-side(<em>front-end</em>) and designing web with minimalism concepts.
                     </p>
                     <p>
                         To me, the quality and craftsmanship is alway the crucial part to create good applications.
-                        <strong> Writing clean and well - formatting code </strong> in the first place helps reduce debug time and increase maintainability. Afterward, the written code will be optimized with <strong>algorithms</strong>.
+                        <strong> Writing clean, well-formatted code </strong> in the first place helps reduce debug time and increase maintainability. Afterward, the written code will be optimized with <strong>algorithms</strong> as well as organized
+                        to maintain scalability with <strong>Software Design Patterns</strong> such as MVC.
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <a> consequat </a>.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a> Excepteur </a> sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Having several times to work with many teams, 2 startups, I could acquire the knowledge of how a business work both technically and economically in many aspects, as well as my teamwork skill which is concentrated on <strong>communicating,
+                        critical thinking, problem-solving</strong>, and creating plans. The <strong>ability to present</strong> confidently is an addition which has been built from the tutoring experiences.
                     </p>
                 </div>
             </div>
@@ -182,6 +185,7 @@
         <div class="section__container">
             <div class="content__title">
                 <h1 class="header header-spaced">Projects</h1>
+                <h2 class="semi-title">A collection of my personal crafts</h2>
             </div>
         </div>
     </section>
