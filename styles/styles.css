@@ -229,6 +229,12 @@ a.card {
 }
 
 a.card:hover {
+    border-color: var(--background-light);
+    transition: var(--element-none);
+    transform: translate(0, 5px);
+}
+
+a.card[href^="http"]:hover {
     border-color: var(--color-alternative);
     transition: var(--element-none);
     transform: translate(0, 5px);
@@ -407,6 +413,7 @@ li.active {
     box-sizing: border-box;
     border-bottom: 3px solid white;
     transition: none;
+    font-weight: bold;
 }
 
 li.active:hover {

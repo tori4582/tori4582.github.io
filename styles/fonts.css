@@ -83,6 +83,12 @@ span {
     font-size: var(--size-semi-title);
 }
 
+.description {
+    font-size: var(--size-text-regular);
+    font-style: italic;
+    color: gray;
+}
+
 .content__text p {
     font-size: var(--size-text-content);
 }
@@ -95,7 +101,7 @@ span {
     color: grey;
 }
 
-h2.centered {
+.centered {
     font-weight: normal;
     padding: 0;
     padding-bottom: 2rem;
