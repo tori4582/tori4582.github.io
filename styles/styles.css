@@ -404,3 +404,14 @@ ul#contact-list li a:hover i {
 #summary__header {
     padding-bottom: 0px;
 }
+
+li.active {
+    box-sizing: border-box;
+    border-bottom: 3px solid white;
+    transition: none;
+}
+
+li.active:hover {
+    color: white;
+    border-bottom: 3px solid white;
+}
