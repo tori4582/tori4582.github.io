@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1300px) {
+    .menubar__indexes {
+        display: none !important;
+    }
+    a.card {
+        max-width: 90vw !important;
+        min-width: 50vw !important;
+    }
+    ul#contact-list li {
+        max-width: 65vw !important;
+        min-width: 40vw !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .flex-horizontal {
+        flex-direction: column !important;
+    }
+    .content__westside {
+        justify-content: center !important;
+    }
+    .content__eastside {
+        display: block !important;
+    }
+    div#contact-container {
+        background-position: bottom -65% right 0% !important;
+        background-size: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1.title {
+        font-size: 5em !important;
+    }
+    .content__title {
+        flex-direction: column !important;
+    }
+    .content__title h2 {
+        padding-left: 0 !important;
+        padding-top: 1em !important;
+    }
+    div#contact-container {
+        background-position: center !important;
+        background-size: cover !important;
+    }
+    #contact-container div.content__westside {
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+    ul#contact-list li {
+        max-width: 60vw !important;
+        min-width: 60vw !important;
+    }
+}
