@@ -29,6 +29,11 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: Garamond;
+    src: url("../fonts/Garamond.tff");
+}
+
 :root {
     --size-title: 8.5rem;
     --size-semi-title: 1.5rem;
