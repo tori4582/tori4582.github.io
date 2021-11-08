@@ -30,14 +30,115 @@
 
 @media only screen and (max-width: 800px) {
     h1.title {
-        font-size: 5em !important;
+        font-size: 60px !important;
+    }
+    div.menubar__logo h1 {
+        padding-bottom: 0 !important;
+        font-size: 28px !important;
+    }
+    h1.header {
+        font-size: 40px !important;
+        padding-bottom: 2rem !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    h2 {
+        font-size: 28px !important;
+    }
+    h2.semi-title {
+        width: 100% !important;
+        text-align: center !important;
+        font-size: 18px !important;
+        padding: 0 !important;
+    }
+    span {
+        font-size: 16px !important;
+    }
+    p {
+        font-size: 14px !important;
+    }
+    button {
+        height: 3em;
+        width: auto !important;
+    }
+    section {
+        width: 100vw !important;
+    }
+    div.card__image img {
+        max-width: 70px !important;
+        max-height: 70px !important;
+    }
+    div.card__content h1 {
+        font-size: 24px !important;
+    }
+    div.card__content p {
+        text-align: left !important;
+    }
+    div.section__container {
+        width: auto !important;
+        padding-left: 5vw !important;
+        padding-right: 5vw !important;
+        padding-top: 5vh !important;
+        padding-bottom: 5vh !important;
+    }
+    img.image-avatar {
+        margin: 1rem;
+    }
+    div.hero-area__content {
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    div.content__traversal {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        justify-self: center;
+    }
+    div.travesal__container {
+        width: 60vw !important;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30vw !important;
+    }
+    div.content__travesal span {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .hero-area__menubar {
+        height: 50px !important;
+    }
+    a.card {
+        max-width: 75vw !important;
+        min-width: 75vw !important;
+    }
+    div.content__titlebox {
+        margin-bottom: 1rem !important;
+    }
+    .content__northside {
+        flex-direction: column !important;
+    }
+    .content__eastside {
+        padding: 0px !important;
     }
     .content__title {
         flex-direction: column !important;
+        width: 100% !important;
     }
-    .content__title h2 {
+    .content__title h1 {
         padding-left: 0 !important;
         padding-top: 1em !important;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
     div#contact-container {
         background-position: center !important;
@@ -48,7 +149,7 @@
         min-width: 100% !important;
     }
     ul#contact-list li {
-        max-width: 60vw !important;
-        min-width: 60vw !important;
+        max-width: 75vw !important;
+        min-width: 75vw !important;
     }
 }

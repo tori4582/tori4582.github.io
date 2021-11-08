@@ -252,6 +252,10 @@ a.card div.card__image a {
     box-sizing: content-box;
 }
 
+div.card__image {
+    padding-right: 1.5em;
+}
+
 div.card__image img {
     padding: 0;
     /* background-image: linear-gradient(45deg, transparent, var(--color-alternative)); */
@@ -268,7 +272,6 @@ div.card__image img {
 a.card div.card__content {
     margin: 0;
     padding: 0;
-    padding-left: 1.5em;
     display: inline-block;
     box-sizing: border-box;
     width: 100%;
@@ -325,9 +328,9 @@ div.card__content p em {
     background-attachment: local;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
     justify-content: flex-start;
     overflow: hidden;
 }
