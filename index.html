@@ -59,7 +59,7 @@
                                 <span>Get my CV</span>
                             </button>
                         </div>
-                        <span> or scroll down for more</span>
+                        <span id="formore"> or scroll down for more</span>
                     </div>
                 </div>
             </div>
@@ -191,12 +191,12 @@
                 <h1 class="header header-spaced">Experiences</h1>
             </div>
             <div class="card-layout">
-                <a href="" class="post-cover">
-                    <div class="post">
+                <a href="" class="post">
+                    <div class="post-cover">
                         <div class="post-container">
                             <div class="post-title">
-                                <h1 class="header"></h1>
-                                <p></p>
+                                <h1 class="header">Title title title</h1>
+                                <p>bla bla bla</p>
                             </div>
                             <div class="post-content">
                                 <p></p>
@@ -204,7 +204,6 @@
                         </div>
                     </div>
                 </a>
-
             </div>
         </div>
     </section>
@@ -214,6 +213,19 @@
             <div class="content__title">
                 <h1 class="header header-spaced">Projects</h1>
                 <h2 class="semi-title">A collection of my personal crafts</h2>
+            </div>
+            <div class="content__westside flex-vertical width-half">
+                <div class="content__text margin-x-5">
+                    <p>
+                        This section is still under construction. Alternatively, you can take a glance at my personal Github to see what am I going on. Thank you.
+                    </p>
+                    <div style="margin-top: 2.5em;" class="button-wrapper">
+                        <button class="light pressable" onclick="directGithub()">
+                                <i class="bi bi-collection"></i>
+                                <span>My Repositories</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -309,50 +321,48 @@
                 <div class="content__title">
                     <h1 class="header header-spaced">Contact</h1>
                 </div>
-                <div class="content__westside flex-vertical" style="margin-left: 0px; height: fit-content;">
+                <div class="content__westside flex-vertical width-half" style="margin-left: 0px; height: fit-content;">
 
                     <div class="content__text">
                         <p>
                             Thanks for taking the time to take a look at my portfolio. I hope you are satisfied with my performance and you perhaps give me a job opportunity and be a part of the development of your enterprise.
                         </p>
-                        <div>
-                            <ul id="contact-list">
-                                <li>
-                                    <a href="mailto:hungtran6360@gmail.com" target="_blank">
-                                        <i class="bi bi-envelope-fill"></i>
-                                        <span>hungtran6360@gmail.com</span></a>
-                                </li>
-                                <li>
-                                    <a href="tel:0862126360">
-                                        <i class="bi bi-telephone-outbound-fill" target="_blank"></i>
-                                        <span>(+84) 86 212 6360</span></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/tori4582/" target="_blank">
-                                        <i class="bi bi-linkedin"></i>
-                                        <span>Quốc Hùng (tori4582)</span></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/tori4582" target="_blank">
-                                        <i class="bi bi-github"></i>
-                                        <span>tori4582</span></a>
-                                </li>
-                                <li>
-                                    <a href="https://fb.com/tori4582" target="_blank">
-                                        <i class="bi bi-facebook"></i>
-                                        <span>Quốc Hùng</span></a>
-                                </li>
-                                <div class="button-wrapper" style="margin: 1rem;margin-top: 2rem;">
-                                    <button class="light pressable border-light" onclick="getCV()">
-                                        <i style="margin-right: 1em;" class="bi bi-cloud-download"> </i>
+                        <ul id="contact-list">
+                            <li>
+                                <a href="mailto:hungtran6360@gmail.com" target="_blank">
+                                    <i class="bi bi-envelope-fill"></i>
+                                    <span>hungtran6360@gmail.com</span></a>
+                            </li>
+                            <li>
+                                <a href="tel:0862126360">
+                                    <i class="bi bi-telephone-outbound-fill" target="_blank"></i>
+                                    <span>(+84) 86 212 6360</span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/tori4582/" target="_blank">
+                                    <i class="bi bi-linkedin"></i>
+                                    <span>Quốc Hùng (tori4582)</span></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/tori4582" target="_blank">
+                                    <i class="bi bi-github"></i>
+                                    <span>tori4582</span></a>
+                            </li>
+                            <li>
+                                <a href="https://fb.com/tori4582" target="_blank">
+                                    <i class="bi bi-facebook"></i>
+                                    <span>Quốc Hùng</span></a>
+                            </li>
+                            <div class="button-wrapper" style="margin: 1rem;margin-top: 2rem;">
+                                <button class="light pressable border-light" onclick="getCV()">
+                                        <i class="bi bi-cloud-download"> </i>
                                         <span style="margin-right: 1em;">Get my CV</span>
                                     </button>
-                                </div>
-                                <span>
+                            </div>
+                            <span>
                                     <em>or download my CV instead</em>
                                 </span>
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
                 </div>
             </div>

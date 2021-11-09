@@ -129,7 +129,7 @@
     .content__eastside {
         padding: 0px !important;
     }
-    E .content__title {
+    .content__title {
         flex-direction: column !important;
         width: 100% !important;
     }
@@ -140,9 +140,12 @@
         align-items: center;
         align-content: center;
     }
+    img#keyboard {
+        display: none;
+    }
     div#contact-container {
-        background-position: center !important;
-        background-size: cover !important;
+        background-position: bottom 530px right 50% !important;
+        background-size: 100% !important;
     }
     #contact-container div.content__westside {
         max-width: 100% !important;
