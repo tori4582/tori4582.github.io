@@ -57,6 +57,10 @@ h3 {
     font-weight: 300;
 }
 
+h2 {
+    font-size: var(--size-semi-header);
+}
+
 em {
     font-style: italic;
 }

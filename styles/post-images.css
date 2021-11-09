@@ -1,0 +1,19 @@
+div#i-english.image {
+    background-image: url(../images/posts/i-english.jpg);
+}
+
+div#webdev.image {
+    background-image: url(../images/posts/webdev.jpg);
+}
+
+div#daynhauhoc.image {
+    background-image: url(../images/posts/daynhauhoc.png);
+}
+
+div#tutor.image {
+    background-image: url(../images/posts/tutor.jpg);
+}
+
+div#continue.image {
+    background-image: url(../images/continue.jpg);
+}

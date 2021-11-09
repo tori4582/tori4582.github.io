@@ -220,3 +220,9 @@ footer p {
     margin-left: 0;
     margin-right: 0;
 }
+
+.margin-x-1 {
+    margin: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+}
