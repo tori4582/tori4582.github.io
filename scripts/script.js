@@ -1,5 +1,5 @@
 function getCV() {
-    window.open("../resources/cv.pdf", '_blank').focus();
+    window.open("../resources/PhamQuocHung_JavaFresher_CV2021.pdf", '_blank').focus();
 }
 
 function directGithub() {
