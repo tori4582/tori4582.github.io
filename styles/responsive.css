@@ -129,7 +129,7 @@
     .content__eastside {
         padding: 0px !important;
     }
-    .content__title {
+    E .content__title {
         flex-direction: column !important;
         width: 100% !important;
     }
