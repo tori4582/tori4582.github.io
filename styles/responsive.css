@@ -186,4 +186,12 @@
         transition: var(--element-hover);
         border: var(--border-hovered);
     }
+    section#projects {
+        height: 100vh !important;
+        /* padding-bottom: 10em !important; */
+    }
+    section#projects::after {
+        background-position: bottom 10% center !important;
+        background-size: 75% !important;
+    }
 }

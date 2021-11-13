@@ -442,12 +442,12 @@ section#projects::after {
     height: 100%;
     position: absolute;
     content: "";
-    background-image: url(../images/test.png);
+    background-image: url(../images/engineering.gif);
     background-color: white;
-    background-size: 70%;
-    background-position: right -66% center;
+    background-size: 45%;
+    background-position: right 10% center;
     background-repeat: no-repeat;
-    filter: invert(1);
+    filter: invert(1) hue-rotate(57deg) brightness(1.5) contrast(1.15);
     z-index: -1;
 }
 
@@ -575,4 +575,8 @@ div.post-content p:before {
 
 div.post-content ul {
     margin-top: 1em;
+}
+
+a#post-continue {
+    cursor: default;
 }
