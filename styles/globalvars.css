@@ -206,6 +206,10 @@ footer p {
     min-width: 50vw;
 }
 
+.text-light {
+    color: var(--background-light);
+}
+
 
 /* Spacing */
 
