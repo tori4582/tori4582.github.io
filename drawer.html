@@ -189,7 +189,7 @@
     </footer>
 
     <!-- Require login -->
-    <div id="login_cover" class="uk-position-cover uk-overlay uk-overlay-primary uk-width-1-1 uk-height-1-1" style="backdrop-filter: blur(15px);">
+    <div id="login_cover" class="uk-position-cover uk-overlay uk-overlay-primary uk-width-1-1 uk-height-1-1 " style="backdrop-filter: blur(15px); ">
         <div style="border: 2px solid white;" id="login_cover" class="uk-position-center uk-dark uk-padding uk-width-1-3 uk-height-2-3">
             <h1 class="uk-heading-medium uk-text-light uk-margin-medium-bottom">
                 <i class="bi bi-archive uk-text-light"></i> Drawer
@@ -248,6 +248,10 @@
                 user.classList.add("uk-form-danger", "uk-animation-shake")
                 pass.classList.add("uk-form-danger", "uk-animation-shake")
             }
+        }
+
+        window.onload = function() {
+            document.getElementsByTagName("body")[0].removeChild(document.getElementById("login_cover"));
         }
     </script>
 </body>
