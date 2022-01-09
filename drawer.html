@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
 </head>
 
 <body>
@@ -26,13 +28,14 @@
             <div class="uk-overlay-primary uk-position-cover"></div>
             <div class="uk-overlay uk-position-center uk-light">
                 <h1 uk-scrollspy="cls:uk-animation-slide-top" class="uk-heading-medium uk-text-light uk-text-center"><i class="bi bi-archive uk-text-light"></i> Drawer</h1>
-                <p><em class="uk-text-large uk-text-light uk-text-muted">A personal and always available storage</em></p>
+                <p uk-scrollspy="cls:uk-animation-slide-bottom"><em class="uk-text-large uk-text-light uk-text-muted">A personal and always available storage</em></p>
             </div>
         </div>
     </header>
     <section>
         <div class="uk-container uk-container-large uk-padding uk-padding-medium uk-flex uk-flex-center uk-width-4-5">
             <ul uk-accordion class="uk-width-expand">
+                <!-- Documents -->
                 <li uk-scrollspy="cls:uk-animation-slide-top; delay: 250">
                     <div class="uk-button uk-button-default uk-accordion-title uk-padding uk-padding-small uk-box-shadow-medium">
                         <span class="uk-text-primary uk-float-left uk-text-default" uk-icon="file-pdf"></span>
@@ -118,40 +121,135 @@
                         </div>
                     </div>
                 </li>
+
+                <!-- Hyperlinks -->
                 <li uk-scrollspy="cls:uk-animation-slide-top; delay: 350 ">
                     <div class="uk-button uk-button-default uk-accordion-title uk-padding uk-padding-small uk-box-shadow-medium ">
                         <span class="uk-text-primary uk-float-left uk-text-default " uk-icon="world"></span>
                         <span class="uk-text-capitalize ">Hyperlinks</span>
                     </div>
                     <div class="uk-accordion-content ">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, recusandae aspernatur. Corrupti dignissimos, facilis cumque nesciunt et at voluptatem ducimus? Eos, necessitatibus voluptatum commodi magni repellat ratione vel sapiente
-                            ea.
-                        </p>
+                        <div class="uk-placeholder uk-text-center">
+                            This drawer is still empty.
+                        </div>
                     </div>
                 </li>
+
+                <!-- Applications -->
                 <li uk-scrollspy="cls:uk-animation-slide-top; delay: 450 ">
                     <div class="uk-button uk-button-default uk-accordion-title uk-padding uk-padding-small uk-box-shadow-medium ">
                         <span class="uk-text-primary uk-float-left uk-text-default " uk-icon="thumbnails"></span>
                         <span class="uk-text-capitalize ">Applications</span>
                     </div>
                     <div class="uk-accordion-content ">
-
+                        <div class="uk-placeholder uk-text-center">
+                            This drawer is still empty.
+                        </div>
                     </div>
                 </li>
+
+                <!-- Configurations -->
                 <li uk-scrollspy="cls:uk-animation-slide-top; delay: 550 ">
                     <div class="uk-button uk-button-default uk-accordion-title uk-padding uk-padding-small uk-box-shadow-medium ">
                         <span class="uk-text-primary uk-float-left uk-text-default " uk-icon="code"></span>
                         <span class="uk-text-capitalize ">Configurations</span>
                     </div>
                     <div class="uk-accordion-content ">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, recusandae aspernatur. Corrupti dignissimos, facilis cumque nesciunt et at voluptatem ducimus? Eos, necessitatibus voluptatum commodi magni repellat ratione vel sapiente
-                            ea.
-                        </p>
+                        <div class="uk-placeholder uk-text-center">
+                            This drawer is still empty.
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Images -->
+                <li uk-scrollspy="cls:uk-animation-slide-top; delay: 650 ">
+                    <div class="uk-button uk-button-default uk-accordion-title uk-padding uk-padding-small uk-box-shadow-medium ">
+                        <span class="uk-text-primary uk-float-left uk-text-default " uk-icon="image"></span>
+                        <span class="uk-text-capitalize ">Images</span>
+                    </div>
+                    <div class="uk-accordion-content ">
+                        <div class="uk-placeholder uk-text-center">
+                            This drawer is still empty.
+                        </div>
                     </div>
                 </li>
             </ul>
         </div>
     </section>
+    <div>
+        <div></div>
+    </div>
+    <section>
+    </section>
+    <footer class="uk-panel uk-background-secondary uk-text-center uk-padding-large">
+        <p class="uk-light">
+            <strong>Drawer project</strong> is powered by <span uk-icon="uikit"> </span>
+            <a href="https://https://getuikit.com/">UI Kit</a> © 2021 by <img src="./images/Haru.png" width="20px" height="20px"></img> <strong>Phạm Quốc Hùng</strong> (<em>Steve Alan</em>/<strong>@tori4582</strong>)
+        </p>
+    </footer>
+
+    <!-- Require login -->
+    <div id="login_cover" class="uk-position-cover uk-overlay uk-overlay-primary uk-width-1-1 uk-height-1-1" style="backdrop-filter: blur(15px);">
+        <div style="border: 2px solid white;" id="login_cover" class="uk-position-center uk-dark uk-padding uk-width-1-3 uk-height-2-3">
+            <h1 class="uk-heading-medium uk-text-light uk-margin-medium-bottom">
+                <i class="bi bi-archive uk-text-light"></i> Drawer
+            </h1>
+            <hr style="border: 0.5px solid white;">
+            <form class="uk-margin-medium-top uk-form-horizontal">
+                <div style="display: none">
+                    <div id="notification" class="uk-alert uk-alert-danger uk-animation-shake" uk-alert>
+                        <button class="uk-alert-close uk-text-danger" type="button" uk-close></button>
+                        <p>
+                            Unrecognized username or password</p>
+                    </div>
+                </div>
+                <div class="uk-margin uk-flex uk-flex-column uk-flex-center">
+                    <div class="uk-inline uk-margin">
+                        <span class="uk-form-icon" uk-icon="icon: user"></span>
+                        <input id="user" class="uk-input uk-form-large uk-form-width-large" type="text " placeholder="Username">
+                    </div>
+                    <div class="uk-inline">
+                        <span class="uk-form-icon" uk-icon="lock">
+                        </span>
+                        <input id="pass" class="uk-input uk-form-large uk-form-width-large " type="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-width-1-1">
+                    <button class="uk-float-right uk-button uk-button-default uk-button-large uk-width-1-3" onclick="login()">
+                        <span class="uk-text-large uk-text-light">Login</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function validate(username, password) {
+            return (username === "a0690933420cc610c1c8dce7f844dd44") &&
+                (password === "88aae4f5f14bcad54003522af7349a1c")
+        }
+
+        function login() {
+            const user = document.getElementById("user")
+            const pass = document.getElementById("pass")
+            user.classList.remove("uk-form-danger", "uk-animation-shake")
+            pass.classList.remove("uk-form-danger", "uk-animation-shake")
+            const isValid = validate(CryptoJS.MD5(user.value).toString(),
+                CryptoJS.MD5(pass.value).toString())
+
+            if (isValid) {
+                const loginPrompt = document.getElementById("login_cover")
+                loginPrompt.style.display = "none";
+            } else {
+                const notification = document.getElementById("notification")
+                UIkit.notification("Unrecognized username or password", {
+                    pos: "bottom-right",
+                    status: "danger"
+                });
+                user.classList.add("uk-form-danger", "uk-animation-shake")
+                pass.classList.add("uk-form-danger", "uk-animation-shake")
+            }
+        }
+    </script>
 </body>
 
 </html>
