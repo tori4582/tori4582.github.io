@@ -17,3 +17,7 @@ div#tutor.image {
 div#continue.image {
     background-image: url(../images/continue.jpg);
 }
+
+div#nab-work.image {
+    background-image: url(../images/nab-work.jpg);
+}

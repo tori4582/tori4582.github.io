@@ -8,6 +8,7 @@
     --foreground-title: rgb(250, 250, 250);
     --foreground-content: rgb(250, 250, 250);
     --color-alternative: rgb(109, 179, 63);
+    --color-nab: rgb(255, 34, 21);
     --foreground-title-dark: rgb();
     --foreground-content-dark: #000;
     --border-regular: 2px solid var(--background-dimmed);
@@ -42,6 +43,7 @@ body {
 a {
     text-decoration: none;
     color: var(--color-alternative);
+    /* color: var(--color-nab); */
     cursor: pointer;
 }
 
@@ -52,7 +54,7 @@ a:hover {
 button {
     padding: 1em;
     height: 4em;
-    background-color: transparent;
+    background: transparent;
     cursor: pointer;
     display: flex;
     flex-direction: row;
@@ -161,6 +163,7 @@ footer p {
 ::selection {
     background: var(--color-alternative);
     color: var(--foreground-content-dark);
+    border-radius: 20px;
 }
 
 
@@ -168,6 +171,10 @@ footer p {
 
 .alter {
     color: var(--color-alternative);
+}
+
+.nab {
+    color: var(--color-nab);
 }
 
 .dimmed {

@@ -314,6 +314,7 @@ div.card__content p:first-child {
 div.card__content p em {
     text-align: justify;
     color: var(--color-alternative);
+    /* color: var(--color-nab); */
     font-size: var(--size-text-script);
 }
 
