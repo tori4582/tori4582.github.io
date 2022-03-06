@@ -79,11 +79,11 @@
     left: 0;
     position: absolute;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
 }
 
 .content__titlebox {
@@ -281,7 +281,7 @@ a.card div.card__content {
     display: inline-block;
     box-sizing: border-box;
     width: 100%;
-    text-align: justify;
+    text-align: left;
 }
 
 div.card__content h1 {
