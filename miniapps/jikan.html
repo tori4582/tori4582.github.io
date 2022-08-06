@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jikan</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="/miniapps/styles/terminal.css">
+    <link rel="stylesheet" href="/miniapps/styles/jikan.css">
+    <script src="/miniapps/js/terminal.js"></script>
+</head>
+
+<body>
+    <div class="terminal-container">
+        <div class="terminal-titlebar">
+            <div class="titlebar__navigation">
+                <a href="/index.html" id="back-navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+						<path fill-rule="evenodd"
+							d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+					</svg>
+                    <span>Back</span>
+                </a>
+            </div>
+            <div class="titlebar__title">
+                <h3 id="title">時　間　－　ｊｉｋａｎ　ｃｌｏｃｋ</strong>
+                </h3>
+            </div>
+            <div class="buttons-container">
+                <button>Ple</button>
+            </div>
+        </div>
+        <div class="terminal-body-container">
+            <div class="clock-container">
+                <div class="clock">
+                    <input type="text" name="clock" id="hours" readonly value="00"> |
+                    <input type="text" name="clock" id="minutes" readonly value="00"> |
+                    <input type="text" name="clock" id="seconds" readonly value="00">
+                </div>
+            </div>
+            <div class="info-container">
+                <input type="text" name="info" id="title">
+                <input type="textarea" name="info" id="details">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

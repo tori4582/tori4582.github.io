@@ -1,0 +1,120 @@
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(39deg, #009fff, #ec2f4b); */
+    background-image: url(/images/wallpaper.jfif);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.terminal-container {
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-image: #444;
+    min-width: 75%;
+    max-width: 75%;
+    min-height: 75%;
+    max-height: 75%;
+    width: 75%;
+    height: 75%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(32px);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+div.terminal-titlebar {
+    /* background: #030303; */
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    font-family: 'Segoe UI', sans-serif;
+    border-bottom: 1px solid grey;
+}
+
+div.titlebar__navigation {
+    min-height: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    margin: 0;
+}
+
+div.titlebar__title {
+    text-align: center;
+    position: relative;
+    padding: 15px;
+}
+
+h3#title {
+    color: white;
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+a#back-navigation {
+    color: rgb(10, 204, 230);
+    text-decoration: none;
+}
+
+div.terminal-body-container {
+    font-family: 'Cascadia Code', monospace;
+    padding: 25px;
+    flex: 1;
+    overflow-y: auto;
+    color: #fafafa;
+    box-sizing: border-box;
+    min-height: 50vh;
+    height: auto;
+}
+
+div.console__command {
+    display: inline-block;
+    color: #fafafa;
+    background: none;
+    border: none;
+    width: auto;
+    min-width: 50%;
+    max-width: 100%;
+}
+
+div.console__command:focus {
+    outline: none;
+}
+
+div.console__prompt {
+    display: inline-flex;
+}
+
+div.console__user {
+    color: cyan;
+}
+
+div.console__pwd {
+    color: yellow;
+}
+
+mark {
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+mark.tokens__command {
+    color: orange;
+}
+
+mark.tokens__flag {
+    color: lightgrey;
+}
