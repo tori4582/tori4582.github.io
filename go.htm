@@ -6,9 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"Go" Transportation Center</title>
+
+    <style>
+        body {
+            width: 100%;
+            max-width: 100vw;
+            padding: 0;
+            margin: 0;
+        }
+        
+        header {
+            width: 100%;
+            background: #030303;
+            padding: 30px;
+            margin: 0;
+            background: linear-gradient(90deg, #000000, #2D3436);
+        }
+        
+        header h1 {
+            color: white;
+            padding: 0;
+            margin: 0;
+            font-size: 40px;
+            background: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: sans-serif;
+            width: fit-content;
+            block-size: fit-content;
+        }
+        
+        a {
+            font-family: sans-serif;
+        }
+        
+        div.navbar {
+            background: lightgray;
+            padding: 10px;
+        }
+        
+        h1 b {
+            font-family: monospace;
+            font-weight: 1000;
+        }
+        
+        footer {
+            width: 100%;
+        }
+        
+        section {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            height: 70vh !important;
+            min-height: 70vh !important;
+        }
+        
+        section div {
+            width: 50%;
+            border: 1px solid black;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            font-family: sans-serif !important;
+        }
+        
+        pre {
+            text-align: center;
+            padding: 15px;
+            font-size: 25px;
+            overflow-x: auto;
+        }
+        
+        pre#query {
+            font-weight: bold;
+            background: lightgrey;
+        }
+    </style>
+
 </head>
 
 <body>
+
+    <header>
+        <h1> <b>@tori4582</b>: "Go" Transportation Center </h1>
+    </header>
+    <div class="navbar">
+        <a href="index.html"><span>< Back to home page</span></a>
+    </div>
+    <section>
+        <div>
+            <h2>🚅 You are about to be navigated</h2>
+            <hr>
+            <br>
+            <p>Your ticket is requiring to be transferred to the alias:</p>
+            <pre id="query">query-link</pre>
+            <p>Your destination will be translated to:</p>
+            <pre id="destination">query-link</pre>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+
     <script>
         (async() => {
             const urlSearchParams = new URLSearchParams(window.location.search);
@@ -21,6 +122,10 @@
             const routerMap = await new Map(Object.entries(routerObject));
 
             const destination = routerMap.get(params.q);
+            document.getElementById("query").innerText = params.q;
+            document.getElementById("destination").innerText = destination;
+
+            await new Promise(r => setTimeout(r, 1000));
 
             window.location.replace(
                 (destination !== undefined) ?
