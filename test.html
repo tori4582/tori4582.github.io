@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <!-- Favicon :  title off website -->
+    <link rel="shortcut icon" href="../assets/images/logo/mainlogo.png">
+    <!-- Thư viện w3.js -->
+    <script src="./assets/vendors/js/w3.js"></script>
+    <!-- normalize styles -->
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <!-- fonts + components -->
+    <link rel="stylesheet" href="../assets/css/componentstyle.css">
+    <!--  style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<style>
+    .main_top {
+        display: flex;
+    }
+    
+    .item-left {
+        width: 40%;
+        text-align: left;
+        padding: 20px 0;
+    }
+    
+    .img {
+        width: 75%;
+        border-radius: 15px;
+    }
+    
+    .item-right {
+        width: 60%;
+    }
+    
+    .mausac {
+        display: flex;
+    }
+    
+    .MAU {
+        border: 2px solid black;
+        width: 13%;
+        border-radius: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        margin-left: 20px;
+        font-size: 22px;
+        background-color: black;
+        color: white;
+    }
+    
+    .button {
+        width: 50%;
+        border: 3px solid orange;
+        height: 50px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .giachinhthuc {
+        display: flex;
+        font-size: 30px;
+    }
+    
+    .giam {
+        color: red;
+        margin-left: 30px;
+    }
+    
+    span {
+        font-size: 20px;
+    }
+    
+    h3 {
+        padding: 0;
+        margin: 15px 0;
+    }
+    
+    .giagoc {
+        color: darkgrey;
+        text-decoration: line-through;
+        font-size: 20px;
+    }
+    
+    .mota {
+        text-align: justify;
+    }
+    
+    .container-html {
+        display: flex;
+    }
+    
+    .item {
+        width: 500px;
+        margin: 20px;
+        border: 2px solid rgb(168, 156, 156);
+        text-align: center;
+        border-radius: 20px;
+    }
+    
+    .imgpro {
+        width: 100%;
+    }
+    
+    .w.img {
+        width: 200px;
+    }
+    
+    .stars {
+        position: relative;
+        white-space: nowrap;
+        max-width: min-content;
+    }
+    
+    #star-overlay {
+        background: #fff;
+        height: 100%;
+        overflow: hidden;
+        mix-blend-mode: color;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    .stars i {
+        color: gold;
+    }
+</style>
+
+<body>
+    <!-- Import header W3 -->
+    <div w3-include-html="./header"></div>
+
+    <div class="container">
+
+        <div class="sesFilter">
+            <div class="searchBar">
+                <input type="text" class="search-input" placeholder="Search...">
+                <span class="search-icon"></span>
+            </div>
+            <div class="filter-box">
+                <button class="btnFilter"></button>
+            </div>
+        </div>
+        <div class="main_top">
+            <div class="item-left">
+                <img class="img" src="../productdetail/img_productdetail/Túi làm từ táo thừa.png" alt="">
+            </div>
+            <div class="item-right">
+                <h1>TEN SAN PHAM</h1>
+
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+
+                    <div id="star-overlay" style="width: 37%"></div>
+                </div>
+
+                <a class="giagoc">699.000 VNĐ</a>
+                <div class="giachinhthuc">
+                    <h3>399.<span>000</span>VNĐ</h3>
+                    <h3 class="giam">(-43%)</h3>
+                </div>
+                <div class="mausac">
+                    <p>Màu sắc:</p>
+                    <div class="MAU">
+                        Black
+                    </div>
+                </div>
+                <br> <br>
+                <div>
+                    <button class="button">
+                        <i class="bi bi-cart-plus"></i>
+						Thêm vào giỏ hàng
+					</button>
+                </div>
+                <hr>
+                <div>
+                    <strong>Chất Liệu:</strong>
+                    <br>
+                    <strong>Kích Thước:</strong>
+                    <br>
+                    <strong>Xuất xứ:</strong>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="main_end">
+            <h3>Mô tả:</h3>
+            <p class="mota">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptate repellat nesciunt libero voluptates unde. Magnam eveniet odio ducimus earum mollitia velit, iusto, excepturi repudiandae rem blanditiis voluptates fugiat quisquam? Lorem
+                ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis accusantium eum non neque maiores cum ipsum voluptate esse alias quibusdam quis ex placeat itaque qui mollitia, delectus expedita quisquam deserunt? Lorem, ipsum dolor sit
+                amet consectetur adipisicing elit. Aut ea nemo deleniti fugit ducimus sint. Velit pariatur placeat quibusdam exercitationem dolores nihil repellat esse atque? Doloremque eaque provident ipsum totam!
+            </p>
+        </div>
+        <br></br>
+        <div class="sanphamlienquan">
+            <h2>SẢN PHẨM LIÊN QUAN</h2>
+        </div>
+        <div id="content"></div>
+
+
+    </div>
+    <script>
+        function loadJson() {
+            fetch("productdetail.json")
+                .then(function(res) {
+                    if (!res.ok) {
+                        throw Error("Http Error: ", res.status);
+                    }
+                    return res.json()
+                })
+                .then(function(data) {
+
+                    console.log(data)
+
+                    let html = "<div class= 'container-html'>";
+                    for (let p of data) {
+                        html += "<div class='item' >";
+                        html += "<div class='w.img'>"
+                        html += "<image class='imgpro' src='" + p.url + "'/><br/>";
+                        html += "</div>"
+                        html += "<div class='p'>"
+                        html += "<p>" +
+                            p.title + "</p>" +
+                            "<br/>";
+                        html += p.price;
+                        html += "</div>"
+                        html += "</div>";
+                    }
+                    document.getElementById("content").innerHTML = html;
+                })
+                .catch(function(err) {
+                    alert(err.message);
+                })
+        }
+
+        // percentage should be in range [0 .. 1]
+        function setRatingStar(percentage) {
+            const strPercent = (1 - percentage) * 100 + "%"
+            document.getElementById("star-overlay").style.width = strPercent;
+        }
+
+        window.onload = () => {
+
+            loadJson();
+            setRatingStar(0.4)
+
+        }
+
+        w3.includeHTML();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2024</title>
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="index.js"></script>
+
+	<style>
+	</style>
+</head>
+<body class="bg-slate-300 p-24 min-w-screen min-h-screen">
+
+<div class="uk-container uk-container-small bg-white rounded p-12 drop-shadow-md">
+
+	<div>
+		<h1 class="uk-heading-small w-full text-center">2024 Year Progress</h1>
+		<div class="py-12 flex items-center">
+			<progress id="progress-bar" class="progress progress-neutral shrink" value="50" max="100"></progress>
+			<span class="min-w-[50px] ml-4 text-right"><span id="progress-val" class="text-neutral">0</span> %</span>
+		</div>
+	</div>
+	<div id="days-board" class="grid gap-4 grid-cols-10 items-center">
+
+	</div>
+
+</div>
+
+</body>
+</html>
