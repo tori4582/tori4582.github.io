@@ -23,7 +23,11 @@ window.onload = () => {
 		daysBoard.innerHTML += `<div class="rounded p-1 text-center align-bottom text-xs ${displayClass}">${displayHtml}</div>`;
 	}
 
-	const dayPercentage = ((today - firstDayOfCurrentYear) / lastDayOfCurrentYear * 100).toFixed(2);
+	console.log(today);
+	console.log(firstDayOfCurrentYear);
+	console.log(lastDayOfCurrentYear);
+
+	const dayPercentage = ((today - firstDayOfCurrentYear) * 100 / (lastDayOfCurrentYear - firstDayOfCurrentYear)).toFixed(2);
 	console.log(dayPercentage)
 
 	document.querySelector('#progress-val').innerText = dayPercentage;
